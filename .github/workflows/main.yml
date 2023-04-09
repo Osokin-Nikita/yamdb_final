@@ -31,7 +31,6 @@ jobs:
 
     - name: Test with flake8 and django tests
       run: |
-        cd ../
         # запуск проверки проекта по flake8
         python -m flake8
         pytest
