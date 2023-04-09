@@ -1,25 +1,21 @@
 from django.contrib.auth.tokens import default_token_generator
 from django.core.mail import send_mail
 from django.shortcuts import get_object_or_404
-
 from django_filters.rest_framework import DjangoFilterBackend
-
 from rest_framework import mixins, permissions, status, viewsets
 from rest_framework.decorators import action, api_view, permission_classes
 from rest_framework.filters import SearchFilter
 from rest_framework.response import Response
-
 from rest_framework_simplejwt.tokens import AccessToken
-
 from reviews.models import Category, Genre, Review, Title, User
 
 from .filters import TitleFilter
 from .permissions import IsAdmin, IsAdminOrAuthorOrReadOnly, IsAdminOrReadOnly
-from .serializers import (
-    CategorySerializer, CommentSerializer, GenreSerializer,
-    RegisterDataSerializer, ReviewSerializer, TitleSerializerGet,
-    TitleSerializerPost, TokenSerializer, UserEditSerializer, UserSerializer
-)
+from .serializers import (CategorySerializer, CommentSerializer,
+                          GenreSerializer, RegisterDataSerializer,
+                          ReviewSerializer, TitleSerializerGet,
+                          TitleSerializerPost, TokenSerializer,
+                          UserEditSerializer, UserSerializer)
 
 
 class CategoryGenreViewSet(
