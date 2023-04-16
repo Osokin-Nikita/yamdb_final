@@ -179,8 +179,7 @@ python manage.py migrate
 http://51.250.31.176/api/v1/  
 http://51.250.31.176/admin/
 
-## Автор
-https://github.com/Osokin-Nikita
+## Автор - https://github.com/Osokin-Nikita
 
 Ссылка на репозиторий:
 https://github.com/Osokin-Nikita/yamdb_final
