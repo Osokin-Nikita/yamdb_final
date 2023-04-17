@@ -178,6 +178,7 @@ python manage.py migrate
 ### Развёрнутый проект:
 http://51.250.31.176/api/v1/  
 http://51.250.31.176/admin/
+http://51.250.31.176/redoc/
 
 ## Автор - https://github.com/Osokin-Nikita
 
