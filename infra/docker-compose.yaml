@@ -10,7 +10,7 @@ services:
       - ./.env
 
   web:
-    image: nikitaosokin32/api_yamdb:v1.0
+    image: nikitaosokin32/api_yamdb:latest
     restart: always
     volumes:
       - static_value:/app/static/
